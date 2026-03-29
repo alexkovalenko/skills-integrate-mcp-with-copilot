@@ -13,6 +13,29 @@
     </header>
 
     <main>
+      <section id="auth-container">
+        <h3>Account Access</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="email" id="username" required placeholder="account@mergington.edu" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Enter password" />
+          </div>
+          <div class="auth-actions">
+            <button type="submit">Log In</button>
+            <button type="button" id="logout-btn" class="secondary">Log Out</button>
+          </div>
+        </form>
+        <p id="session-status" class="status-text">Not logged in.</p>
+        <p class="hint-text">
+          Demo accounts: student <strong>emma@mergington.edu / student123</strong>, advisor
+          <strong>advisor@mergington.edu / advisor123</strong>
+        </p>
+      </section>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
@@ -37,7 +60,7 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
-        <div id="message" class="hidden"></div>
+        <div id="message" class="message hidden"></div>
       </section>
     </main>
 
